@@ -75,13 +75,8 @@
     <!-- How it works Section -->
     <div class="full-width q-px-sm q-mb-lg">
       <div
-        class="q-mt-sm q-mb-sm full-width text-center"
-        style="
-          font-size: 18px;
-          font-weight: 800;
-          color: #111827;
-          margin-top: 8px;
-        "
+        class="q-mb-lg full-width text-center"
+        style="font-size: 18px; font-weight: 800; color: #111827"
       >
         ¿Cómo funciona?
       </div>

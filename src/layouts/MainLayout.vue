@@ -6,7 +6,7 @@
     >
       <q-layout view="lHh Lpr lFf" container class="full-height">
         <q-header class="bg-white" style="border-bottom: 1px solid #f3f4f6">
-          <q-toolbar style="min-height: 70px">
+          <q-toolbar style="min-height: 55px">
             <q-btn
               flat
               dense
