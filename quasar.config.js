@@ -47,7 +47,7 @@ export default (ctx) => {
       // vueRouterBase,
       // vueDevtools,
 
-      publicPath: '/grip-stickers-app/',
+      publicPath: "/grip-stickers-app/",
       // define: {},
       // defineEnv: {}
       // ignorePublicFolder: true,
