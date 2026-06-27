@@ -8,7 +8,7 @@
           class="text-center q-mt-xs"
           style="color: #9ca3af; font-size: 12px"
         >
-          Genera el patrón de diseño a medida<br />para tu espacio seguro
+          Genera el patrón de diseño a medida para tu espacio seguro
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@
     <!-- How it works Section -->
     <div class="full-width q-px-sm q-mb-lg">
       <div
-        class="q-mt-md q-mb-lg full-width text-center"
+        class="q-mt-sm q-mb-sm full-width text-center"
         style="
           font-size: 18px;
           font-weight: 800;
@@ -98,7 +98,7 @@
             Mide tu superficie
           </div>
           <div style="color: #6b7280; font-size: 14px; line-height: 1.5">
-            Introduce las dimensiones exactas de tu ducha o bañera.
+            Introduce las dimensiones exactas de la superficie.
           </div>
         </div>
       </div>
