@@ -1,12 +1,8 @@
 // Configuration for your app
+const path = require("path");
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file
 
-import { fileURLToPath } from "url";
-import { dirname, resolve } from "path";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-export default (ctx) => {
+module.exports = function (ctx) {
   return {
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
     // preFetch: true,
@@ -54,16 +50,27 @@ export default (ctx) => {
       // minify: false,
       // distDir
 
-      extendViteConf(viteConf) {
-        viteConf.resolve = viteConf.resolve || {};
-        viteConf.resolve.alias = Object.assign(viteConf.resolve.alias || {}, {
-          "@": resolve(__dirname, "src"),
-        });
-      },
-
+      // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
 
-      vitePlugins: [],
+      vitePlugins: [
+        [
+          "@intlify/unplugin-vue-i18n/vite",
+          {
+            // if you want to use Vue I18n Legacy API, you need to set `compositionOnly: false`
+            // compositionOnly: false,
+
+            // if you want to use named tokens in your Vue I18n messages, such as 'Hello {name}',
+            // you need to set `runtimeOnly: false`
+            // runtimeOnly: false,
+
+            ssr: ctx.modeName === "ssr",
+
+            // you need to set i18n resource including paths !
+            include: [path.resolve(__dirname, "src/i18n")],
+          },
+        ],
+      ],
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
