@@ -27,7 +27,7 @@
         <q-dialog v-model="leftDrawerOpen" backdrop-filter="blur(4px)">
           <q-card style="width: 320px; border-radius: 16px;">
             <div class="logo flex flex-center q-pt-lg">
-              <img src="/logo-sensawell-blue.png" alt="Logo" style="height: 35px; object-fit: contain;" />
+              <img :src="import.meta.env.BASE_URL + 'logo-sensawell-blue.png'" alt="Logo" style="height: 35px; object-fit: contain;" />
             </div>
             <q-list class="q-pt-md q-pb-sm">
               <q-item clickable v-ripple to="/" exact @click="leftDrawerOpen = false" class="justify-center q-mt-lg  q-mx-md q-mb-sm q-px-lg" style="border: 1px solid #e5e7eb; border-radius: 12px;">

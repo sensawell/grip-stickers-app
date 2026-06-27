@@ -19,7 +19,7 @@
       <!-- Step 1 -->
       <div class="row items-start q-pa-md q-mb-md" style="border: 1px solid #e5e7eb; border-radius: 14px;">
         <div class="col-12 col-sm-auto flex justify-start q-mb-md q-mb-sm-none q-mr-sm-md">
-          <q-img src="/paso-2.png" style="width: 250px; max-width: 100%; border-radius: 10px; background: #e8eef8;" />
+          <q-img :src="import.meta.env.BASE_URL + 'paso-2.png'" style="width: 250px; max-width: 100%; border-radius: 10px; background: #e8eef8;" />
         </div>
         <div class="col-12 col-sm">
           <div style="color: #003087; font-size: 13px; font-weight: 700;">01</div>
@@ -32,7 +32,7 @@
       <!-- Step 2 -->
       <div class="row items-start q-pa-md q-mb-md" style="border: 1px solid #e5e7eb; border-radius: 14px;">
         <div class="col-12 col-sm-auto flex justify-start q-mb-md q-mb-sm-none q-mr-sm-md">
-          <q-img src="/paso-3.png" style="width: 250px; max-width: 100%; border-radius: 10px; background: #e8eef8;" />
+          <q-img :src="import.meta.env.BASE_URL + 'paso-3.png'" style="width: 250px; max-width: 100%; border-radius: 10px; background: #e8eef8;" />
         </div>
         <div class="col-12 col-sm">
           <div style="color: #003087; font-size: 13px; font-weight: 700;">02</div>
@@ -46,7 +46,7 @@
       <!-- Step 4 -->
       <div class="row items-start q-pa-md q-mb-lg" style="border: 1px solid #e5e7eb; border-radius: 14px;">
         <div class="col-12 col-sm-auto flex justify-start q-mb-md q-mb-sm-none q-mr-sm-md">
-          <q-img src="/paso-4.png" style="width: 250px; max-width: 100%; border-radius: 10px; background: #e8eef8;" />
+          <q-img :src="import.meta.env.BASE_URL + 'paso-4.png'" style="width: 250px; max-width: 100%; border-radius: 10px; background: #e8eef8;" />
         </div>
         <div class="col-12 col-sm">
           <div style="color: #003087; font-size: 13px; font-weight: 700;">04</div>

@@ -27,17 +27,17 @@
         style="background-color: #e8eef8; border-radius: 16px;"
       >
         <q-carousel-slide :name="1" class="column no-wrap flex-center q-pa-none">
-          <q-img src="/01-main.png" fit="cover" style="width: 100%; height: 100%;" />
+          <q-img :src="import.meta.env.BASE_URL + '01-main.png'" fit="cover" style="width: 100%; height: 100%;" />
         </q-carousel-slide>
 
         <q-carousel-slide :name="2" class="column no-wrap flex-center q-pa-none">
-          <q-img src="/02-result.png" fit="contain" style="width: 100%; height: 100%;" />
+          <q-img :src="import.meta.env.BASE_URL + '02-result.png'" fit="contain" style="width: 100%; height: 100%;" />
         </q-carousel-slide>
         <q-carousel-slide :name="3" class="column no-wrap flex-center q-pa-none">
-          <q-img src="/04-ducha.png" fit="cover" style="width: 100%; height: 100%;" />
+          <q-img :src="import.meta.env.BASE_URL + '04-ducha.png'" fit="cover" style="width: 100%; height: 100%;" />
         </q-carousel-slide>
         <q-carousel-slide :name="4" class="column no-wrap flex-center q-pa-none">
-          <q-img src="/03-material.png" fit="cover" style="width: 100%; height: 100%;" />
+          <q-img :src="import.meta.env.BASE_URL + '03-material.png'" fit="cover" style="width: 100%; height: 100%;" />
         </q-carousel-slide>
 
       </q-carousel>
