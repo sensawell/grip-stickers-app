@@ -26,13 +26,15 @@ jobs:
         run: npm run build
 
       - name: Deploy to sensawell.github.io
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.DEPLOY_TOKEN }}
-        with:
-          source-directory: dist/spa
-          destination-github-username: sensawell
-          destination-repository-name: sensawell.github.io
-          target-directory: grip-stickers-app
-          destination-branch: main
-          commit-message: 'Deploy grip-stickers-app from ${{ github.repository }}@${{ github.sha }}'
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git clone https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/sensawell/sensawell.github.io.git target-repo
+          rm -rf target-repo/grip-stickers-app
+          mkdir -p target-repo/grip-stickers-app
+          cp -r dist/spa/. target-repo/grip-stickers-app/
+          cd target-repo
+          git add -A
+          git diff --cached --quiet && echo "No changes to deploy" && exit 0
+          git commit -m "Deploy grip-stickers-app @ ${{ github.sha }}"
+          git push
