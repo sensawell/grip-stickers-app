@@ -75,7 +75,7 @@
     <!-- How it works Section -->
     <div class="full-width q-px-sm q-mb-lg">
       <div
-        class="q-mb-lg full-width text-center"
+        class="q-mb-sm full-width text-center"
         style="font-size: 18px; font-weight: 800; color: #111827"
       >
         ¿Cómo funciona?
@@ -93,7 +93,7 @@
             Mide tu superficie
           </div>
           <div style="color: #6b7280; font-size: 14px; line-height: 1.5">
-            Introduce las dimensiones exactas de la superficie.
+            Introduce las dimensiones de la superficie.
           </div>
         </div>
       </div>
@@ -116,7 +116,7 @@
       </div>
 
       <!-- Step 3 -->
-      <div class="row q-mb-sm no-wrap items-start">
+      <div class="row no-wrap items-start">
         <div class="col-auto q-pr-md" style="min-width: 32px">
           <span style="color: #003087; font-size: 15px; font-weight: 700"
             >03</span
